@@ -114,6 +114,60 @@ form .input_Fields div input{
         float: left;
     }
 }
+
+@media screen and (max-width: 950px) {
+    table thead tr {
+        display: none;    
+    }
+    table td {
+        text-align: right;
+        display: block;
+        font-size: 20 px;
+        font-weight: 500;
+    }
+    
+    table td::before {
+        content: attr(data-title) ": ";
+        float: left;
+    }
+}
+
+@media screen and (max-width: 770px){
+
+    .modal-body form .box {
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+    }
+
+    .box .n_showImg {
+        width: 100px;
+        height: 100px;
+    }
+
+    .modal-body form .input_Fields{
+        margin: 10px 0px 0px 0px;
+        border: none;
+        border-top: 2px solid blue;
+    }
+
+    .modal-body form .input_Fields .display{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .modal-body .displayBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
 @media screen and (max-width: 768px){
     .modal-body form .imgholder{
         border: 1px solid black;
